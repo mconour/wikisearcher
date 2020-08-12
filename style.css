@@ -119,3 +119,21 @@ p  {
 	opacity: 1;
 	transition: all 0.125s ease-in-out;
 }
+
+.read {
+	border: 1px solid black;
+	color: black;
+	text-decoration: none;
+	font-family: 'Lato';
+	font-weight: 300;
+	letter-spacing: 0.025em;
+	font-size: 1em;
+	padding: 0.75em 1.25em;
+	opacity: 0;
+	transition: all 0.125s ease-in-out;
+}
+.read:hover {
+	background: black;
+	color: white;
+	transition: all 0.125s ease-in-out;
+}
