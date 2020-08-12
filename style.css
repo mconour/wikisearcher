@@ -42,3 +42,18 @@ p  {
 .top-bar:hover {
 	background: #fff;
 }
+
+.fa {
+    columns: #000;
+    opacity: 0.8;
+	margin: 0 1em 0 1em;
+	padding: 0.25em 0;
+}
+
+.fa-random {
+	float: left;
+}
+
+.fa-search {
+	float: right;
+}
