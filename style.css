@@ -57,3 +57,25 @@ p  {
 .fa-search {
 	float: right;
 }
+
+.searchbar,
+.button {
+    height: 65px;
+    max-width: 90%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: #fff;
+    top: 40%;
+    border: none;
+    position: relative;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    font-size: 1.25em;    
+}
+
+.searchbar:focus,
+.button:focus {
+	outline: none;
+}
