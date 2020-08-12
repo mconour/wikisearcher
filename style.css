@@ -79,3 +79,19 @@ p  {
 .button:focus {
 	outline: none;
 }
+
+.searchbar {
+    width: 750px;
+    padding: 0 1em;
+    border-bottom: 3px solid #fff;
+}
+
+.button {
+	width: 150px;
+	transition: background 0.25s ease-in-out;
+}
+
+.button:hover {
+	background: black;
+	transition: background 0.25s ease-in-out;
+}
