@@ -137,3 +137,32 @@ p  {
 	color: white;
 	transition: all 0.125s ease-in-out;
 }
+
+
+.background-0 {
+	background: #F48FB1;
+}
+.background-1 {
+	background: #FFAB91;
+}
+.background-2 {
+	background: #80CBC4;
+}
+.background-3 {
+	background: #CE93D8;
+}
+.background-4 {
+	background: #A5D6A7;
+}
+.background-5 {
+	background: #81D4FA;
+}
+.background-6 {
+	background: #9FA8DA;
+}
+.background-7 {
+	background: #FFEB3B;
+}
+.background-8 {
+	background: #E57373;
+}
