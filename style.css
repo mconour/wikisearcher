@@ -95,3 +95,27 @@ p  {
 	background: black;
 	transition: background 0.25s ease-in-out;
 }
+
+.resultsPage {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+.results {
+	padding: 2em 2em 4em;
+	text-align: center;
+	width: 100%;
+	opacity: 0.8;
+	transition: opacity 0.125s ease-in-out;
+}
+
+.results:hover {
+	opacity: 1;	
+	background: transparent;
+	transition: background 0.125s ease-in-out;
+}
+.results:hover > .read {
+	opacity: 1;
+	transition: all 0.125s ease-in-out;
+}
