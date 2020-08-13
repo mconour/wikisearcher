@@ -45,8 +45,38 @@ $(function () {
         let request = $.ajax({
             dataType: 'jsonp',
 			cache: true,
-			url: 'https://en.wikipedia.org/w/api.php',
+            url: 'https://en.wikipedia.org/w/api.php',
+            data: {
+				format: 'json',
+				action: 'query',
+				list: 'search',
+				continue: '',
+				srlimit: 16,
+				srsearch: input
+			}
+        });
+
+
+        request.done(function (data) {
+            let arr = [];
+            let length = data.query.search.length;
+            if (length > 0) {
+                for (let i = 0; i < length; i++) {
+                    arr[i] = (
+                        '<div class="results background-' + random() + '">' +
+                        '<h2 class="title">' + data.query.search[i].title + '</h2>' +
+                        '<p class="snippit">' + data.query.search[i].snippet + '\u2026</p>' +
+                        '<a class="read" href="https://en.wikipedia.org/wiki/' + data.query.search[i].title + '" target="_blank">READ MORE</a>' +
+                    '</div>'
+                    );
+                }
+
+                lightbox.addClass('lightboxOut');
+                resultsPage.html(arr.join(''));
+            }
+
         })
+
     }
 
 
