@@ -44,16 +44,16 @@ $(function () {
         let input = inputText.val();
         let request = $.ajax({
             dataType: 'jsonp',
-			cache: true,
+            cache: true,
             url: 'https://en.wikipedia.org/w/api.php',
             data: {
-				format: 'json',
-				action: 'query',
-				list: 'search',
-				continue: '',
-				srlimit: 16,
-				srsearch: input
-			}
+                format: 'json',
+                action: 'query',
+                list: 'search',
+                continue: '',
+                srlimit: 16,
+                srsearch: input
+            }
         });
 
 
@@ -67,7 +67,7 @@ $(function () {
                         '<h2 class="title">' + data.query.search[i].title + '</h2>' +
                         '<p class="snippit">' + data.query.search[i].snippet + '\u2026</p>' +
                         '<a class="read" href="https://en.wikipedia.org/wiki/' + data.query.search[i].title + '" target="_blank">READ MORE</a>' +
-                    '</div>'
+                        '</div>'
                     );
                 }
 
@@ -77,21 +77,20 @@ $(function () {
         });
     }
 
-    $(document).keyup(function(e) {
+    $(document).keyup(function (e) {
         if (e.keyCode === 27) lightbox.addClass('lightboxOut');
     })
 
-    $search.on('click', function(e) {
+    $search.on('click', function (e) {
         lightbox.removeClass('lightboxOut');
         search();
         e.preventDefault();
     });
 
 
-    close.on('click', function(e) {
+    close.on('click', function (e) {
         lightbox.addClass('lightboxOut');
     })
-
 
 
 })
