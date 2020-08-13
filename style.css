@@ -5,20 +5,21 @@
 body {
 	margin: 0;
 	padding: 0;
+	background: #000;
 }
 
 h2 {
-    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 0.025em;
-    margin: 0 0 10px 0;
-    padding: 0;
+	font-family: Futura, Trebuchet MS, Arial, sans-serif;
+	font-weight: 700;
+	line-height: 1.1;
+	letter-spacing: 0.025em;
+	margin: 0 0 10px 0;
+	padding: 0;
 }
 
-p  {
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
-    font-weight: 400;
+p {
+	font-family: Futura, Trebuchet MS, Arial, sans-serif;
+	font-weight: 400;
 	line-height: 1.25;
 	letter-spacing: 0.025em;
 	margin: 0;
@@ -26,55 +27,78 @@ p  {
 }
 
 .wrapper {
-    margin: 3em auto 0;
+	margin: 3em auto 0;
 }
 
 .top-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 3em;
-    background: rgba(255, 255, 255, 0.54);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 3em;
+
 }
 
-.top-bar:hover {
-	background: #fff;
-}
-
-.fa {
-    columns: #000;
-    opacity: 0.8;
+.fa,
+.randomsearch {	
 	margin: 0 1em 0 1em;
 	padding: 0.25em 0;
 }
 
 .fa-random {
-    float: left;
-    color: #808080;
+
+	color: #808080;
 }
 
 .fa-search {
-    float: right;
-    color: #808080;
+	float: right;
+	color: #808080;
+}
+
+
+h1,
+.randomsearch {
+	display: inline-block;
+}
+
+.textrandom {	
+	font-family: Futura, Trebuchet MS, Arial, sans-serif;
+}
+
+.text-lg {
+	font-size: 64px;
+}
+
+.icon {
+	display: inline-block;
+	color: currentColor;
+	vertical-align: middle;
+	position: relative;
+	top: -0.1em;
+	right: 20px;
+}
+
+.randomsearch a {
+	text-decoration: none;
+    color: #fff;
 }
 
 .searchbar,
 .button {
-    height: 65px;
-    max-width: 90%;
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    color: #fff;
-    top: 40%;
-    border: none;
-    position: relative;
-    font-family: Futura,Trebuchet MS,Arial,sans-serif;
-    font-weight: 400;
-    letter-spacing: 0.025em;
-    font-size: 1.25em;    
+	height: 65px;
+	max-width: 90%;
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	color: #fff;
+	top: 40%;
+	border: none;
+	position: relative;
+	font-family: Futura, Trebuchet MS, Arial, sans-serif;
+	font-weight: 400;
+	letter-spacing: 0.025em;
+	font-size: 1.25em;
 }
 
 .searchbar:focus,
@@ -83,9 +107,9 @@ p  {
 }
 
 .searchbar {
-    width: 750px;
-    padding: 0 1em;
-    border-bottom: 3px solid #fff;
+	width: 750px;
+	padding: 0 1em;
+	border-bottom: 3px solid #fff;
 }
 
 .button {
@@ -104,20 +128,21 @@ p  {
 	flex-wrap: wrap;
 	margin: 0 auto;
 }
+
 .results {
 	padding: 2em 2em 4em;
 	text-align: center;
-	width: 100%;
-	opacity: 0.8;
+	width: 100%;	
 	transition: opacity 0.125s ease-in-out;
 }
 
 .results:hover {
-	opacity: 1;	
-	background: transparent;
+	opacity: 1;
+	background: #fff;
 	transition: background 0.125s ease-in-out;
 }
-.results:hover > .read {
+
+.results:hover>.read {
 	opacity: 1;
 	transition: all 0.125s ease-in-out;
 }
@@ -134,6 +159,7 @@ p  {
 	opacity: 0;
 	transition: all 0.125s ease-in-out;
 }
+
 .read:hover {
 	background: black;
 	color: white;
@@ -144,44 +170,52 @@ p  {
 .background-0 {
 	background: #FF0000;
 }
+
 .background-1 {
 	background: #00A08A;
 }
+
 .background-2 {
 	background: #F2AD00;
 }
+
 .background-3 {
 	background: #F98400;
 }
+
 .background-4 {
 	background: #5BBCD6;
 }
+
 .background-5 {
 	background: #ECCBAE;
 }
+
 .background-6 {
-	background:#046C9A;
+	background: #046C9A;
 }
+
 .background-7 {
 	background: #D69C4E;
 }
+
 .background-8 {
 	background: #ABDDDE;
 }
 
 .lightbox {
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    outline: none;
-    z-index: 1;
-    opacity: 0;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.9);
-    animation: lightbox 0.25s linear forwards;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	z-index: 1;
+	opacity: 0;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.9);
+	animation: lightbox 0.25s linear forwards;
 }
 
 .lightboxOut {
@@ -199,11 +233,13 @@ p  {
 	opacity: 0;
 	z-index: -1;
 }
+
 @keyframes lightbox {
 	100% {
 		opacity: 1;
 	}
 }
+
 @keyframes lightboxOut {
 	100% {
 		opacity: 0;
