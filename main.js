@@ -81,11 +81,17 @@ $(function () {
         if (e.keyCode === 27) lightbox.addClass('lightboxOut');
     })
 
-    search.on('click', function(e) {
+    $search.on('click', function(e) {
         lightbox.removeClass('lightboxOut');
         search();
         e.preventDefault();
     });
+
+
+    close.on('click', function(e) {
+        lightbox.addClass('lightboxOut');
+    });
+
 
 
 })

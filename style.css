@@ -177,8 +177,8 @@ p  {
     outline: none;
     z-index: 1;
     opacity: 0;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.9);
+    text-align: center;    
+    background: #000;
     animation: lightbox 0.25s linear forwards;
 }
 
