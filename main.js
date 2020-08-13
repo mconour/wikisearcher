@@ -90,7 +90,7 @@ $(function () {
 
     close.on('click', function(e) {
         lightbox.addClass('lightboxOut');
-    });
+    })
 
 
 
