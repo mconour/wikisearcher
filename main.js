@@ -74,10 +74,18 @@ $(function () {
                 lightbox.addClass('lightboxOut');
                 resultsPage.html(arr.join(''));
             }
-
-        })
-
+        });
     }
+
+    $(document).keyup(function(e) {
+        if (e.keyCode === 27) lightbox.addClass('lightboxOut');
+    })
+
+    search.on('click', function(e) {
+        lightbox.removeClass('lightboxOut');
+        search();
+        e.preventDefault();
+    });
 
 
 })
