@@ -15,5 +15,39 @@ random = () => {
     return number;
 }
 
+console.log(random());
+
+$(function () {
+    'use strict';
+    let resultsPage = $('#resultsPage'),
+        form = $('form'),
+        lightbox = $('#lightbox'),
+        $search = $('#search'),
+        searchBar = $('#searchbar'),
+        inputText = $('input:first'),
+        close = $('#close');
+
+    search();
+
+    function search() {
+        inputText.val('');
+        searchBar.focus();
+
+        form.submit(function (e) {
+            getWiki();
+            e.preventDefault();
+        });
+    }
 
 
+    function getWiki() {
+        let input = inputText.val();
+        let request = $.ajax({
+            dataType: 'jsonp',
+			cache: true,
+			url: 'https://en.wikipedia.org/w/api.php',
+        })
+    }
+
+
+})
