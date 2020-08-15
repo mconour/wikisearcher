@@ -70,7 +70,7 @@ h1,
 	font-size: 64px;
 }
 
-.icon {
+.iconrandom {
 	display: inline-block;
 	color: currentColor;
 	vertical-align: middle;
@@ -84,7 +84,7 @@ h1,
     color: #fff;
 }
 
-.searchbar,
+.searchbox,
 .button {
 	height: 65px;
 	max-width: 90%;
@@ -101,12 +101,12 @@ h1,
 	font-size: 1.25em;
 }
 
-.searchbar:focus,
+.searchbox:focus,
 .button:focus {
 	outline: none;
 }
 
-.searchbar {
+.searchbox {
 	width: 750px;
 	padding: 0 1em;
 	border-bottom: 3px solid #fff;
@@ -122,7 +122,7 @@ h1,
 	transition: background 0.25s ease-in-out;
 }
 
-.resultsPage {
+.resultsdisplay {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;

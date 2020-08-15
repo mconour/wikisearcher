@@ -19,11 +19,11 @@ console.log(random());
 
 $(function () {
     'use strict';
-    let resultsPage = $('#resultsPage'),
+    let resultsPage = $('#resultsdisplay'),
         form = $('form'),
         lightbox = $('#lightbox'),
         $search = $('#search'),
-        searchBar = $('#searchbar'),
+        searchbox = $('#searchbox'),
         inputText = $('input:first'),
         close = $('#close');
 
@@ -31,7 +31,7 @@ $(function () {
 
     function search() {
         inputText.val('');
-        searchBar.focus();
+        searchbox.focus();
 
         form.submit(function (e) {
             getWiki();
