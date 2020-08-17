@@ -85,7 +85,7 @@ h1,
 }
 
 .searchbox,
-.button {
+.btn {
 	height: 65px;
 	max-width: 90%;
 	margin: 0;
@@ -102,7 +102,7 @@ h1,
 }
 
 .searchbox:focus,
-.button:focus {
+.btn:focus {
 	outline: none;
 }
 
@@ -112,12 +112,12 @@ h1,
 	border-bottom: 3px solid #fff;
 }
 
-.button {
+.btn {
 	width: 150px;
 	transition: background 0.25s ease-in-out;
 }
 
-.button:hover {
+.btn:hover {
 	background: black;
 	transition: background 0.25s ease-in-out;
 }
