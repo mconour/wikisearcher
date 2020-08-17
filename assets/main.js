@@ -19,7 +19,7 @@ console.log(random());
 
 $(function () {
     'use strict';
-    let resultsPage = $('#resultsdisplay'),
+    let resultsDisplay = $('#resultsdisplay'),
         form = $('form'),
         lightbox = $('#lightbox'),
         $search = $('#search'),
@@ -72,7 +72,7 @@ $(function () {
                 }
 
                 lightbox.addClass('lightboxOut');
-                resultsPage.html(arr.join(''));
+                resultsDisplay.html(arr.join(''));
             }
         });
     }
