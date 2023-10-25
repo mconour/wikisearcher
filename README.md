@@ -45,16 +45,4 @@ No installation is required to use the Wiki Searcher. Simply open the HTML file 
 
 Contributions and improvements to the Wiki Searcher are welcome. Feel free to submit issues or pull requests to enhance its functionality or appearance.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
-## Author
-
-- mconour
-
----
-
-*Note: Customize the author's name and add any additional information as necessary.*
-
 Enjoy exploring Wikipedia with Wiki Searcher! 🌐 📚
