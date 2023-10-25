@@ -2,13 +2,13 @@
 
 Wiki Searcher is a simple web application that allows users to search for Wikipedia articles and displays the search results in a visually appealing way. This README.md file provides an overview of the application and its functionality.
 
-## Screenshots
-
-![Wiki Searcher Application](assets/screenshots/screenshot.png) 
-
 ## Description
 
 The Wiki Searcher application consists of a web page with a search bar where users can enter their search queries. Upon submitting a search query, the application retrieves relevant Wikipedia search results and displays them in a stylish, randomly colored format. Users can click on individual search results to read more about the corresponding Wikipedia articles.
+
+## Screenshots
+
+![Wiki Searcher Application](assets/screenshots/screenshot.png)
 
 ## Features
 
